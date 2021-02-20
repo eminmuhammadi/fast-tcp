@@ -1,0 +1,18 @@
+{
+  "name": "tcp-backdoor",
+  "version": "0.1.0",
+  "description": "tcp backdoor",
+  "main": "src/tcp.js",
+  "author": "Emin Muhammadi <muemin17631@sabah.edu.az> (https://github.com/eminmuhammadi)",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "bash ./_start.sh",
+    "kill": "bash ./_kill.sh"
+  },
+  "devDependencies": {
+    "pm2": "4.5.4"
+  },
+  "dependencies": {
+    "net": "1.0.2"
+  }
+}

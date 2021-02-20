@@ -1,0 +1,18 @@
+apps:
+    - script:  src/tcp.js
+      name: tcp-backdoor
+      instances: 4
+      exec_mode: cluster
+      max_memory_restart: 2G
+      merge_logs: true
+      combine_logs: true
+      error_file: log/error.log
+      out_file: log/out.log
+      pid_file: pid/tcp-backdoor.pid
+      log_date_format: YYYY-MM-DD HH:mm Z
+      shutdown_with_message: true
+      wait_ready: true
+      autorestart: true
+      watch: true
+      env:
+        NODE_ENV: production
